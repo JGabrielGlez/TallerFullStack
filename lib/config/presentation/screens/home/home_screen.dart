@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:widget_gonzalezespinoza/config/menu/menu_items.dart';
+import 'package:widget_gonzalezespinoza/config/presentation/screens/buttons_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -43,7 +44,11 @@ class _CustomListTitle extends StatelessWidget {
       trailing: const Icon(Icons.arrow_forward_ios_sharp),
       title: Text(menuItem.title),
       subtitle: Text(menuItem.subtitle),
-      onTap: () => {},
+      onTap: () {
+        Navigator.of(
+          context,
+        ).push(MaterialPageRoute(builder: (context) => const ButtonsScreen()));
+      },
     );
   }
 }
