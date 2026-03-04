@@ -4,7 +4,7 @@ class MenuItems {
   final String title;
   final String subtitle;
   final String link;
-  final String icon;
+  final IconData icon;
 
   const MenuItems({
     required this.title,
@@ -19,18 +19,18 @@ const menuItems = <MenuItems>[
     title: 'Home',
     subtitle: 'Go to home screen',
     link: '/home',
-    icon: 'assets/icons/home.svg',
+    icon: Icons.home_rounded,
   ),
   MenuItems(
     title: 'Profile',
     subtitle: 'View your profile',
     link: '/profile',
-    icon: 'assets/icons/profile.svg',
+    icon: Icons.people,
   ),
   MenuItems(
     title: 'Settings',
     subtitle: 'Adjust your preferences',
     link: '/settings',
-    icon: 'assets/icons/settings.svg',
+    icon: Icons.settings,
   ),
 ];

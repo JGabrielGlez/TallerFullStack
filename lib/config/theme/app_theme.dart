@@ -10,11 +10,14 @@ const colorList = <Color>[
 
 class AppTheme {
   final int selectedColor;
-  const AppTheme({ this.selectedColor=0})
+  const AppTheme({this.selectedColor = 0})
     : assert(
         selectedColor >= 0 && selectedColor < colorList.length,
         'Selected color index must be between 0 and ${colorList.length - 1}',
       );
-  ThemeData themeData() =>
-      ThemeData(useMaterial3: true, colorSchemeSeed: colorList[selectedColor]);
+  ThemeData themeData() => ThemeData(
+    useMaterial3: true,
+    colorSchemeSeed: colorList[selectedColor],
+    appBarTheme: AppBarTheme(centerTitle: true),
+  );
 }

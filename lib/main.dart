@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widget_gonzalezespinoza/config/presentation/screens/home/home_screen.dart';
 import 'config/theme/app_theme.dart';
 
 void main() {
@@ -13,14 +14,7 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: AppTheme(selectedColor: 2).themeData(),
-      home: Scaffold(
-        body: Center(
-          child: FilledButton(
-            onPressed: () {},
-            child: Text('González Espinoza'),
-          ),
-        ),
-      ),
+      home: HomeScreen(),
     );
   }
 }
