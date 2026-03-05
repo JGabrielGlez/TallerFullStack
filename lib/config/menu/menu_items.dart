@@ -16,21 +16,28 @@ class MenuItems {
 
 const menuItems = <MenuItems>[
   MenuItems(
-    title: 'Home',
+    title: 'Tarjetas',
     subtitle: 'Go to home screen',
-    link: '/home',
+    link: '/cards',
     icon: Icons.home_rounded,
   ),
   MenuItems(
-    title: 'Profile',
+    title: 'Botones',
+    subtitle: 'View your profile',
+    link: '/buttons',
+    icon: Icons.people,
+  ),
+  MenuItems(
+    title: 'Perfil',
     subtitle: 'View your profile',
     link: '/profile',
     icon: Icons.people,
   ),
   MenuItems(
-    title: 'Settings',
-    subtitle: 'Adjust your preferences',
+    title: 'Configuraciones',
+    subtitle: 'View your profile',
     link: '/settings',
-    icon: Icons.settings,
+    icon: Icons.people,
   ),
+  
 ];
