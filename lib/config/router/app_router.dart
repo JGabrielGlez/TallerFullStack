@@ -1,6 +1,7 @@
 import 'package:go_router/go_router.dart';
 import 'package:widget_gonzalezespinoza/config/presentation/screens/cards/card_profile_screen.dart';
 import 'package:widget_gonzalezespinoza/config/presentation/screens/cards/card_settings_screen.dart';
+import 'package:widget_gonzalezespinoza/config/presentation/screens/progress/progress_screen.dart';
 import '../presentation/screens/screens.dart';
 
 // GoRouter configuration
@@ -17,9 +18,9 @@ final appRouter = GoRouter(
       builder: (context, state) => CardsScreen(),
     ),
     GoRoute(
-      path: '/buttons',
-      name: ButtonsScreen.name,
-      builder: (context, state) => const ButtonsScreen(),
+      path: '/progress',
+      name: ProgressScreen.name,
+      builder: (context, state) => const ProgressScreen(),
     ),
     GoRoute(
       path: '/profile',

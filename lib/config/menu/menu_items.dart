@@ -34,10 +34,11 @@ const menuItems = <MenuItems>[
     icon: Icons.people,
   ),
   MenuItems(
-    title: 'Configuraciones',
+    title: 'Progress',
     subtitle: 'View your profile',
-    link: '/settings',
-    icon: Icons.people,
+    link: '/progress',
+    icon: Icons.pregnant_woman_rounded,
   ),
+
   
 ];
